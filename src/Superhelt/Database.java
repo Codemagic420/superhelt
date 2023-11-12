@@ -55,7 +55,7 @@ public class Database {
             System.out.println("Superhelte gemt til fil.");
         } catch (IOException e) {
             System.out.println("Fejl ved gemSuperhelteTilFil: " + e.getMessage());
-            throw e; // Kast exception videre, så det kan håndteres et niveau højere
+            throw e;
         }
     }
 

@@ -20,7 +20,6 @@ public class SuperhelteComparator implements Comparator<Superhelte> {
         if (primærSammenligning != 0) {
             return primærSammenligning;
         } else {
-            // Brug sekundær sortering, hvis primær sortering er ens
             return sammenlign(a, b, sekundærSortering);
         }
     }
@@ -33,9 +32,9 @@ public class SuperhelteComparator implements Comparator<Superhelte> {
                 return Integer.compare(a.getStyrke(), b.getStyrke());
             case FØDSELSÅR:
                 return Integer.compare(a.getCreationYear(), b.getCreationYear());
-            // Tilføj yderligere sorteringer her efter behov
+
             default:
-                return 0; // Behandl standardtilfælde passende
+                return 0; //
         }
     }
 
